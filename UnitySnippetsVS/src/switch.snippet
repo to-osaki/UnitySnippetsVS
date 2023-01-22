@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>swite</Title>
+      <Shortcut>swite</Shortcut>
+      <Description>switch expression</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+		<Literal>
+			<ID>var</ID>
+			<Default>var</Default>
+		</Literal>
+		<Literal>
+			<ID>pattern</ID>
+			<Default>pattern</Default>
+		</Literal>
+		<Literal>
+			<ID>ret</ID>
+			<Default>ret</Default>
+		</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[$var$ switch {
+$pattern$ => $ret$,
+_ => $end$,
+};]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

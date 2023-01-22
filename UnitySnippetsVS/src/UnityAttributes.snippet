@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sef</Title>
+      <Shortcut>sef</Shortcut>
+      <Description>[SerializeField]</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>var</ID>
+          <Default>var</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID>
+          <Default>GameObject</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[SerializeField] $type$ $var$;$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>createassetmenu</Title>
+      <Shortcut>createassetmenu</Shortcut>
+      <Description>[CreateAssetMenu]</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[CreateAssetMenu(fileName = nameof($type$), menuName = nameof($type$))]$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>createassetmenu</Title>
+      <Shortcut>createassetmenu</Shortcut>
+      <Description>[CreateAssetMenu]</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[CreateAssetMenu(fileName = nameof($type$), menuName = nameof($type$))]$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>#ifeditor</Title>
+			<Shortcut>#ifeditor</Shortcut>
+			<Description>#if UNITY_EDITOR</Description>
+			<Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp"><![CDATA[#if UNITY_EDITOR
+		$selected$ $end$
+	#endif]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>#ifdev</Title>
+			<Shortcut>#ifdev</Shortcut>
+			<Description>#if DEVELOPMENT_BUILD</Description>
+			<Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp"><![CDATA[#if DEVELOPMENT_BUILD
+		$selected$ $end$
+	#endif]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

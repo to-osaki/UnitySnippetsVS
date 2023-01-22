@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dlog</Title>
+      <Shortcut>dlog</Shortcut>
+      <Description>Debug.Log</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>msg</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.Log("$msg$");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dwar</Title>
+      <Shortcut>dwar</Shortcut>
+      <Description>Debug.LogWarning</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>msg</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.LogWarning("$msg$");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>derr</Title>
+      <Shortcut>derr</Shortcut>
+      <Description>Debug.LogError</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>msg</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.LogError("$msg$");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dexp</Title>
+      <Shortcut>dexp</Shortcut>
+      <Description>Debug.LogException</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>exp</ID>
+          <Default>e</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.LogException($exp$);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dass</Title>
+      <Shortcut>dass</Shortcut>
+      <Description>Debug.Assert</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>expression</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.Assert($expression$);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dasn</Title>
+      <Shortcut>dasn</Shortcut>
+      <Description>Debug.Assert(must not be null)</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>it</ID>
+          <Default>it</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.Assert($it$ != null, $$"{nameof($it$)} must not be null.");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dase</Title>
+      <Shortcut>dase</Shortcut>
+      <Description>Debug.Assert(must be equal)</Description>
+      <Author>to-osaki</Author>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>it</ID>
+          <Default>it</Default>
+        </Literal>
+        <Literal>
+          <ID>expect</ID>
+          <Default>expect</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[Debug.Assert($it$ == $expect$, $$"{nameof($it$)} expected {$expect$} but was {$it$}.");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

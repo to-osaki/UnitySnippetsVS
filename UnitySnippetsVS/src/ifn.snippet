@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ifn</Title>
+      <Shortcut>ifn</Shortcut>
+      <Description>if == null</Description>
+      <Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+				<Literal>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if($i$ == null)
+{
+$selected$$end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ifnr</Title>
+      <Shortcut>ifnr</Shortcut>
+      <Description>if == null, then return</Description>
+      <Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+				<Literal>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if($i$ == null) { return; }$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>inn</Title>
+      <Shortcut>inn</Shortcut>
+      <Description>if != null</Description>
+      <Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+				<Literal>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if($i$ != null)
+{
+$selected$$end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>innr</Title>
+      <Shortcut>innr</Shortcut>
+      <Description>if != null, then return</Description>
+      <Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+				<Literal>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if($i$ != null) { return; }$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ifse</Title>
+      <Shortcut>ifse</Shortcut>
+      <Description>if string is empty</Description>
+      <Author>to-osaki</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+				<Literal>
+					<ID>expression</ID>
+					<Default>true</Default>
+				</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if(string.IsNullOrEmpty($expression$))
+{
+$selected$$end$
+}
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

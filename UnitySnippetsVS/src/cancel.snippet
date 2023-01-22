@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ct</Title>
+      <Shortcut>ct</Shortcut>
+      <Description>CancellationToken ct</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>CT</ID>
+          <Function>SimpleTypeName(global::System.Threading.CancellationToken)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[$CT$ ct$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cts</Title>
+      <Shortcut>cts</Shortcut>
+      <Description>new CancellationTokenSource</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>var</ID>
+          <Default>cts</Default>
+        </Literal>
+        <Literal Editable="false">
+          <ID>CTS</ID>
+          <Function>SimpleTypeName(global::System.Threading.CancellationTokenSource)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[var $var$ = new $CTS$();$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ctslink</Title>
+      <Shortcut>ctslink</Shortcut>
+      <Description>CancellationTokenSource.CreateLinkedTokenSource</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+		<Literal>
+			<ID>ct1</ID>
+			<Default>ct1</Default>
+		</Literal>
+		<Literal>
+			<ID>ct2</ID>
+			<Default>ct2</Default>
+		</Literal>
+		<Literal>
+			<ID>var</ID>
+			<Default>linkedToken</Default>
+		</Literal>
+		<Literal Editable="false">
+			<ID>CTS</ID>
+			<Function>SimpleTypeName(global::System.Threading.CancellationTokenSource)</Function>
+		</Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[var $var$ = $CTS$.CreateLinkedTokenSource($ct1$, $ct2$);$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
