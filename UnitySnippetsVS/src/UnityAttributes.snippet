@@ -13,36 +13,13 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>var</ID>
-          <Default>var</Default>
+          <ID>var</ID><Default>var</Default>
         </Literal>
         <Literal>
-          <ID>type</ID>
-          <Default>GameObject</Default>
+          <ID>type</ID><Default>GameObject</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[[SerializeField] $type$ $var$;$end$]]>
-      </Code>
-    </Snippet>
-  </CodeSnippet>
-
-  <CodeSnippet Format="1.0.0">
-    <Header>
-      <Title>createassetmenu</Title>
-      <Shortcut>createassetmenu</Shortcut>
-      <Description>[CreateAssetMenu]</Description>
-      <Author>to-osaki</Author>
-      <SnippetTypes>
-        <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-    </Header>
-    <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>type</ID>
-        </Literal>
-      </Declarations>
-      <Code Language="csharp"><![CDATA[[CreateAssetMenu(fileName = nameof($type$), menuName = nameof($type$))]$end$]]>
+      <Code Language="csharp"><![CDATA[[SerializeField] private $type$ $var$;$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>

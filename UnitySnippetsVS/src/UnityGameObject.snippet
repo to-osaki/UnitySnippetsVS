@@ -13,24 +13,23 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>go</ID>
-          <Default>go</Default>
+          <ID>go</ID><Default>go</Default>
         </Literal>
         <Literal>
-          <ID>type</ID>
-          <Default>Transform</Default>
+          <ID>type</ID><Default>Transform</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[$go$.GetComponent<$type$>() ?? $go$.AddComponent<$type$>();$end$]]>
+      <Code Language="csharp">
+        <![CDATA[$go$.GetComponent<$type$>() ?? $go$.AddComponent<$type$>();$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
-
+  
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>getcomponent</Title>
-      <Shortcut>getcomponent</Shortcut>
-      <Description>GetComponent</Description>
+      <Title>ginstantiate</Title>
+      <Shortcut>ginstantiate</Shortcut>
+      <Description>GameObject.Instantiate</Description>
       <Author>to-osaki</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -39,49 +38,22 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>go</ID>
-          <Default>go</Default>
+          <ID>go</ID><Default>go</Default>
         </Literal>
         <Literal>
-          <ID>type</ID>
-          <Default>Transform</Default>
+          <ID>prefab</ID><Default>prefab</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[$go$.GetComponent<$type$>();$end$]]>
+      <Code Language="csharp">
+        <![CDATA[var $go$ = GameObject.Instantiate($prefab$);$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
 
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>addcomponent</Title>
-      <Shortcut>addcomponent</Shortcut>
-      <Description>AddComponent</Description>
-      <Author>to-osaki</Author>
-      <SnippetTypes>
-        <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-    </Header>
-    <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>go</ID>
-          <Default>go</Default>
-        </Literal>
-        <Literal>
-          <ID>type</ID>
-          <Default>Transform</Default>
-        </Literal>
-      </Declarations>
-      <Code Language="csharp"><![CDATA[$go$.AddComponent<$type$>();$end$]]>
-      </Code>
-    </Snippet>
-  </CodeSnippet>
-
-  <CodeSnippet Format="1.0.0">
-    <Header>
-      <Title>destroy</Title>
-      <Shortcut>destroy</Shortcut>
+      <Title>gdestroy</Title>
+      <Shortcut>gdestroy</Shortcut>
       <Description>Destroy();</Description>
       <Author>to-osaki</Author>
       <SnippetTypes>
@@ -95,7 +67,8 @@
           <Default>go</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[if($go$ != null)
+      <Code Language="csharp">
+        <![CDATA[if($go$ != null)
 {
   if (Application.isPlaying)
   {
@@ -109,4 +82,24 @@
       </Code>
     </Snippet>
   </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>raycast</Title>
+      <Shortcut>raycast</Shortcut>
+      <Description>Raycast</Description>
+      <Author>to-osaki</Author>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[RaycastHit hit;
+var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+if (Physics.Raycast(ray.origin, ray.direction, out hit, 999, ~0))
+{
+    $end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
 </CodeSnippets>

@@ -2,19 +2,23 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sisempty</Title>
-      <Shortcut>sisempty</Shortcut>
-      <Description>string.IsNullOrEmpty</Description>
+      <Title>comdis</Title>
+      <Shortcut>comdis</Shortcut>
+      <Description>CompositeDisposable</Description>
       <Author>to-osaki</Author>
-      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
     </Header>
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>var</ID><Default>it</Default>
+          <ID>name</ID>
+          <Default>m_Disposables</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[string.IsNullOrEmpty($var$)$end$]]>
+      <Code Language="csharp">
+        <![CDATA[CompositeDisposable $name$ = new();$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>

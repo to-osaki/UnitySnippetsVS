@@ -31,15 +31,14 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>var</ID>
-          <Default>cts</Default>
+          <ID>var</ID><Default>cts</Default>
         </Literal>
         <Literal Editable="false">
           <ID>CTS</ID>
           <Function>SimpleTypeName(global::System.Threading.CancellationTokenSource)</Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[var $var$ = new $CTS$();$end$]]>
+      <Code Language="csharp"><![CDATA[$CTS$ $var$ = new();$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
@@ -55,16 +54,13 @@
     <Snippet>
       <Declarations>
 		<Literal>
-			<ID>ct1</ID>
-			<Default>ct1</Default>
+			<ID>ct1</ID><Default>ct1</Default>
 		</Literal>
 		<Literal>
-			<ID>ct2</ID>
-			<Default>ct2</Default>
+			<ID>ct2</ID><Default>ct2</Default>
 		</Literal>
 		<Literal>
-			<ID>var</ID>
-			<Default>linkedToken</Default>
+			<ID>var</ID><Default>linkedToken</Default>
 		</Literal>
 		<Literal Editable="false">
 			<ID>CTS</ID>

@@ -14,12 +14,10 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>ret</ID>
-          <Default>void</Default>
+          <ID>ret</ID><Default>void</Default>
         </Literal>
         <Literal>
-          <ID>arg</ID>
-          <Default></Default>
+          <ID>arg</ID><Default></Default>
         </Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[$ret$ fun($arg$)
@@ -43,15 +41,46 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>ret</ID>
-          <Default>void</Default>
+          <ID>ret</ID><Default>void</Default>
         </Literal>
         <Literal>
-          <ID>arg</ID>
-          <Default></Default>
+          <ID>arg</ID><Default></Default>
         </Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[$ret$ fun($arg$) => $selected$$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>extentions</Title>
+      <Shortcut>extentions</Shortcut>
+      <Description>extention method</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>ret</ID><Default>void</Default>
+        </Literal>
+        <Literal>
+          <ID>name</ID><Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID><Default>Type</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+      <![CDATA[static public class $type$Extensions
+{
+    static public $ret$ $name$(this $type$ self)
+    {
+        $selected$$end$
+    }
+}]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

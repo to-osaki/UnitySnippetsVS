@@ -4,7 +4,7 @@
     <Header>
       <Title>aload</Title>
       <Shortcut>aload</Shortcut>
-      <Description>Addressabes.Load</Description>
+      <Description>Addressables.Load</Description>
       <Author>to-osaki</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,11 +13,14 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>address</ID>
-          <Default>address</Default>
+          <ID>type</ID>
+          <Default>GameObject</Default>
+        </Literal>
+        <Literal>
+          <ID>address</ID><Default>address</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[await Addressabes.LoadAsync($address$);$end$]]>
+      <Code Language="csharp"><![CDATA[await Addressables.LoadAssetAsync<$type$>($address$);$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
@@ -26,7 +29,7 @@
     <Header>
       <Title>ainstantiate</Title>
       <Shortcut>ainstantiate</Shortcut>
-      <Description>Addressabes.Instantiate</Description>
+      <Description>Addressables.Instantiate</Description>
       <Author>to-osaki</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -35,11 +38,10 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>address</ID>
-          <Default>address</Default>
+          <ID>address</ID><Default>address</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp"><![CDATA[await Addressabes.InstantiateAsync($address$);$end$]]>
+      <Code Language="csharp"><![CDATA[await Addressables.InstantiateAsync($address$, trackHandle: true);$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>

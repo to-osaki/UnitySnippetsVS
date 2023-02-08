@@ -76,8 +76,7 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>exp</ID>
-          <Default>e</Default>
+          <ID>exp</ID><Default>e</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[Debug.LogException($exp$);$end$]]>
@@ -119,8 +118,7 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>it</ID>
-          <Default>it</Default>
+          <ID>it</ID><Default>it</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[Debug.Assert($it$ != null, $$"{nameof($it$)} must not be null.");$end$]]>
@@ -140,16 +138,33 @@
     </Header>
     <Snippet>
       <Declarations>
-        <Literal>
-          <ID>it</ID>
-          <Default>it</Default>
-        </Literal>
-        <Literal>
-          <ID>expect</ID>
-          <Default>expect</Default>
-        </Literal>
+        <Literal><ID>it</ID><Default>it</Default></Literal>
+        <Literal><ID>expect</ID><Default>expect</Default></Literal>
       </Declarations>
       <Code Language="csharp"><![CDATA[Debug.Assert($it$ == $expect$, $$"{nameof($it$)} expected {$expect$} but was {$it$}.");$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ifkey</Title>
+      <Shortcut>ifkey</Shortcut>
+      <Description>if(Input.GetKeyDown())</Description>
+      <Author>to-osaki</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal><ID>cursor</ID></Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[if(Input.GetKeyDown(KeyCode$cursor$))
+{
+    $end$
+}]]>
       </Code>
     </Snippet>
   </CodeSnippet>
